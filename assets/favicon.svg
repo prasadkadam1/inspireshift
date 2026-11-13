@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1452A0"/>
+      <stop offset="50%" stop-color="#1F3484"/>
+      <stop offset="100%" stop-color="#6BA7CC"/>
+    </linearGradient>
+    <linearGradient id="grad-s" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1452A0"/>
+      <stop offset="40%" stop-color="#6E42A0"/>
+      <stop offset="100%" stop-color="#6BA7CC"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle subtle -->
+  <circle cx="50" cy="50" r="48" fill="#FFFFFF" stroke="#BFDCE8" stroke-width="2"/>
+  
+  <!-- Green dot for 'i' -->
+  <circle cx="34" cy="22" r="8" fill="#4CAC6A"/>
+  
+  <!-- 'i' stem -->
+  <rect x="27" y="36" width="14" height="42" rx="7" fill="url(#grad-blue)"/>
+  
+  <!-- 'S' ribbon shape -->
+  <path d="M46 36 C55 28, 76 28, 76 38 C76 46, 52 48, 52 58 C52 70, 78 72, 78 78 C78 82, 68 86, 56 84 C48 82, 45 76, 45 76" fill="none" stroke="url(#grad-s)" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Play triangle inside -->
+  <polygon points="48,50 48,66 64,58" fill="#1452A0"/>
+</svg>

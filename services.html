@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Inspireshift Technologies LLP</title>
+  <meta name="description" content="Explore our specialized services across Learning & Development, Quality Assurance, Video Learning, Graphics & Animation, and Enterprise IT Services.">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Services | Inspireshift Technologies LLP">
+  <meta property="og:description" content="Specialized digital learning, quality assurance, creative media, and IT engineering solutions.">
+  <meta property="og:image" content="assets/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Core Animation Libraries: GSAP 3 + ScrollTrigger + Lenis Smooth Scroll -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Shared Header -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" aria-label="Inspireshift Technologies Home">
+        <img src="assets/logo.png" alt="Inspireshift Technologies Logo" class="brand-logo-img" width="83" height="83">
+        <div class="brand-text-block">
+          <span class="brand-title">Inspireshift</span>
+          <span class="brand-tagline">Technologies</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links" id="primary-navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="index.html#why-us" class="nav-link">Why Choose Us</a>
+        <a href="index.html#clients" class="nav-link">Clients</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+919284348694" class="header-contact-link" aria-label="Call Inspireshift at +91 92843 48694">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <span>+91 92843 48694</span>
+        </a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Get a Quote</a>
+
+        <!-- Mobile Toggle -->
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+
+    <!-- Services Hero Banner -->
+    <section class="hero" style="padding: 70px 0 60px 0;">
+      <div class="container hero-content">
+        <span class="badge">Comprehensive Capabilities</span>
+        <h1 class="hero-title">
+          Our Specialized <span class="hero-gradient-text">Services</span>
+        </h1>
+        <p class="hero-lead" style="max-width: 740px; margin-bottom: 0;">
+          Delivering end-to-end expertise across modern instructional technology, precision quality engineering, creative production, and custom enterprise software development.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Sticky Sub-Navigation -->
+    <nav class="services-nav-bar" aria-label="Services Sub-navigation">
+      <div class="container">
+        <div class="services-nav-list">
+          <a href="#learning-development" class="services-nav-btn active">Learning &amp; Development</a>
+          <a href="#quality-assurance" class="services-nav-btn">Quality Assurance</a>
+          <a href="#video-learning" class="services-nav-btn">Video Learning</a>
+          <a href="#graphics-animation" class="services-nav-btn">Graphics &amp; Animation</a>
+          <a href="#it-services" class="services-nav-btn">IT Services</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 1. Learning & Development Section -->
+    <section class="service-detail-section" id="learning-development">
+      <div class="container">
+        <div class="service-detail-grid">
+          <div class="service-detail-lead reveal">
+            <span class="badge">Pillar 01</span>
+            <h2 class="service-detail-title">Learning &amp; Development</h2>
+            <p class="service-detail-desc">
+              We translate intricate corporate subject matter into learner-centric digital courses. From compliance modules to technical onboarding, our pedagogical architectures drive measurable retention and operational performance.
+            </p>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>eLearning Development:</strong> Native authoring in Articulate Storyline 360 and Rise 360 with seamless LMS compliance (SCORM 1.2/2004, xAPI, cmi5).</div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Instructional Storyboarding:</strong> Detailed content framing, visual scripts, branching decision trees, and audio voice-over direction.</div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Interactive Learning:</strong> Realistic workplace scenarios, simulated software sandboxes, formative knowledge checks, and summative assessments.</div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Content Localization:</strong> Adapting eLearning modules across regional languages with right-to-left (RTL) support, synchronized audio, and cultural alignment.</div>
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn--primary btn--sm">
+              Discuss an L&amp;D Project
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-detail-media reveal">
+            <div class="service-feature-card">
+              <h3 class="card-title" style="margin-bottom: 20px;">L&amp;D Specializations</h3>
+              <div class="service-subtopics-grid">
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Storyline 360</div>
+                  <div class="subtopic-desc">High-interactivity modules, custom variable logic, triggers, and gamified mechanics.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Rise 360</div>
+                  <div class="subtopic-desc">Ultra-responsive, microlearning-first formats optimized for mobile-first workforces.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Simulations</div>
+                  <div class="subtopic-desc">Guided try-it and test-it software walkthroughs with contextual user feedback.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Localization</div>
+                  <div class="subtopic-desc">Multi-language course packaging with translated UI labels and native voice actors.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Quality Assurance Section -->
+    <section class="service-detail-section section--ice" id="quality-assurance">
+      <div class="container">
+        <div class="service-detail-grid reverse">
+          <div class="service-detail-lead reveal">
+            <span class="badge badge--purple">Pillar 02</span>
+            <h2 class="service-detail-title">Quality Assurance</h2>
+            <p class="service-detail-desc">
+              Defects cost credibility and operational efficiency. Our dedicated QA engineers execute end-to-end testing cycles to ensure functional precision, visual consistency, and responsive stability across complex web portals and eLearning packages.
+            </p>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>eLearning Module QA:</strong> Scrutinizing navigation branches, audio-text synchronicity, scoring logic, bookmarking, and LMS communication.</div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Web &amp; Mobile App Testing:</strong> Comprehensive functional validation, regression cycles, and edge-case testing for enterprise web apps.</div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>UI/UX &amp; Cross-Browser Parity:</strong> Pixel-perfect visual audits across Chrome, Firefox, Safari, Edge, tablets, and real mobile hardware.</div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Manual QA &amp; Actionable Reporting:</strong> Structured test plans, step-by-step reproduction steps, severity matrices, and direct JIRA logging.</div>
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn--purple btn--sm">
+              Schedule QA Audit
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-detail-media reveal">
+            <div class="service-feature-card">
+              <h3 class="card-title" style="margin-bottom: 20px;">Testing Coverage</h3>
+              <div class="service-subtopics-grid">
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Functional QA</div>
+                  <div class="subtopic-desc">Validating business rules, user workflows, state management, and edge-cases.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Hardware Lab</div>
+                  <div class="subtopic-desc">Testing across physical iOS, Android, macOS, and Windows display matrices.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">LMS Compliance</div>
+                  <div class="subtopic-desc">Verifying SCORM API calls, completion status, quiz scoring, and suspend data.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Defect Tracking</div>
+                  <div class="subtopic-desc">Clear bug reproduction steps, video captures, and rapid triage coordination.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Video Learning Section -->
+    <section class="service-detail-section" id="video-learning">
+      <div class="container">
+        <div class="service-detail-grid">
+          <div class="service-detail-lead reveal">
+            <span class="badge badge--green">Pillar 03</span>
+            <h2 class="service-detail-title">Video Learning</h2>
+            <p class="service-detail-desc">
+              Video is the most consumed medium for technical training, product walk-throughs, and corporate induction. We produce polished, informative video content combining motion graphics, studio audio, and clear instructional narrative.
+            </p>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Training &amp; Explainer Videos:</strong> Concept breakdowns, process simulations, and compliance videos that simplify intricate workflows.</div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Software Screen Recording:</strong> High-definition system capture with smooth mouse cursor zooming, callouts, and step-by-step guidance.</div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Motion Graphics &amp; Audio:</strong> Custom title sequences, kinematic typography, sound design, and professional voice-over mastering.</div>
+              </li>
+            </ul>
+
+            <!-- Video Flow Chart -->
+            <div style="margin-top: 24px;">
+              <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: var(--navy); letter-spacing: 0.05em;">Our Production Flow</span>
+              <div class="flow-steps">
+                <div class="flow-step-box">
+                  <span class="flow-step-idx">1</span>
+                  <span class="flow-step-name">Script</span>
+                </div>
+                <span class="flow-arrow">&rsaquo;</span>
+                <div class="flow-step-box">
+                  <span class="flow-step-idx">2</span>
+                  <span class="flow-step-name">Storyboard</span>
+                </div>
+                <span class="flow-arrow">&rsaquo;</span>
+                <div class="flow-step-box">
+                  <span class="flow-step-idx">3</span>
+                  <span class="flow-step-name">Design</span>
+                </div>
+                <span class="flow-arrow">&rsaquo;</span>
+                <div class="flow-step-box">
+                  <span class="flow-step-idx">4</span>
+                  <span class="flow-step-name">Production</span>
+                </div>
+                <span class="flow-arrow">&rsaquo;</span>
+                <div class="flow-step-box">
+                  <span class="flow-step-idx">5</span>
+                  <span class="flow-step-name">Delivery</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-detail-media reveal">
+            <div class="service-feature-card">
+              <h3 class="card-title" style="margin-bottom: 20px;">Video Capabilities</h3>
+              <div class="service-subtopics-grid">
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Explainer Videos</div>
+                  <div class="subtopic-desc">Concise 60-120 second videos distilling complex technology into engaging stories.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Screen Capture</div>
+                  <div class="subtopic-desc">Crystal-clear software demos with zoom callouts, highlights, and annotations.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Motion Design</div>
+                  <div class="subtopic-desc">Dynamic infographic transitions, vector animations, and kinetic typography.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Audio &amp; Voice-over</div>
+                  <div class="subtopic-desc">Native voice actors, multilingual tracks, audio clean-up, and sound mastering.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Graphics & Animation Section -->
+    <section class="service-detail-section section--ice" id="graphics-animation">
+      <div class="container">
+        <div class="service-detail-grid reverse">
+          <div class="service-detail-lead reveal">
+            <span class="badge">Pillar 04</span>
+            <h2 class="service-detail-title">Graphics &amp; Animation</h2>
+            <p class="service-detail-desc">
+              Visual clarity drives quick comprehension. Our creative team designs bespoke visual identities, educational infographics, 2D animations, and custom learning assets tailored to your brand guidelines.
+            </p>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Infographics &amp; Data Visualization:</strong> Transforming dense data sets into intuitive, publication-ready visual diagrams.</div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Character Design &amp; Illustrations:</strong> Creating custom illustrated avatars, cultural personas, and thematic asset libraries.</div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>2D Animation &amp; Motion Graphics:</strong> Engaging character rigging, micro-animations, animated icons, and scene transitions.</div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Interactive Learning Assets:</strong> Vector buttons, custom badges, progress meters, and certificates designed for LMS embedding.</div>
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn--primary btn--sm">
+              Commission Creative Work
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-detail-media reveal">
+            <div class="service-feature-card">
+              <h3 class="card-title" style="margin-bottom: 20px;">Creative Offerings</h3>
+              <div class="service-subtopics-grid">
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Bespoke Vector Art</div>
+                  <div class="subtopic-desc">Scalable vector assets prepared precisely for Storyline, Rise, and web interfaces.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Brand Consistency</div>
+                  <div class="subtopic-desc">Strict adherence to corporate style guides, font hierarchies, and palette tokens.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">2D Rigging</div>
+                  <div class="subtopic-desc">Character-driven storytelling with expressive movement and contextual poses.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">UI Assets</div>
+                  <div class="subtopic-desc">Modern iconography, layout headers, certificates, and gamification badges.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. IT Services Section -->
+    <section class="service-detail-section" id="it-services">
+      <div class="container">
+        <div class="service-detail-grid">
+          <div class="service-detail-lead reveal">
+            <span class="badge badge--purple">Pillar 05</span>
+            <h2 class="service-detail-title">IT Services &amp; Digital Solutions</h2>
+            <p class="service-detail-desc">
+              We engineer dependable, responsive web applications and enterprise IT solutions designed for operational longevity, speed, and seamless user interaction.
+            </p>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Web Development:</strong> Clean, semantic, lightning-fast static and dynamic web portals adhering to modern standards and mobile-first principles.</div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Application Development:</strong> Custom web applications, API integrations, dashboard reporting, and workflow automation.</div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Enterprise &amp; Microsoft 365:</strong> SharePoint intranet design, Power Apps workflow automation, and custom form digitization.</div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon-bullet"><svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg></span>
+                <div><strong>Technology Consulting:</strong> Architecture audits, platform selection, LMS deployment strategies, and digital transformation roadmaps.</div>
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn--primary btn--sm">
+              Initiate IT Engagement
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-detail-media reveal">
+            <div class="service-feature-card">
+              <h3 class="card-title" style="margin-bottom: 20px;">Development Standards</h3>
+              <div class="service-subtopics-grid">
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Semantic Code</div>
+                  <div class="subtopic-desc">HTML5, modular CSS3, and vanilla JavaScript written for speed and durability.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Accessibility</div>
+                  <div class="subtopic-desc">WCAG AA color contrast, screen reader compatibility, and keyboard navigation.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Cloud Readiness</div>
+                  <div class="subtopic-desc">Deployment-ready on Netlify, Vercel, AWS, or enterprise servers with zero bloat.</div>
+                </div>
+                <div class="subtopic-item">
+                  <div class="subtopic-title">Security &amp; QA</div>
+                  <div class="subtopic-desc">Rigorous sanitization, secure forms, and strict privacy handling.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Band -->
+    <section class="cta-band cta-band--purple" aria-label="Services Contact Call to Action">
+      <div class="container cta-band-content">
+        <div class="cta-band-text">
+          <span class="badge badge--white">Collaborate With Us</span>
+          <h2 class="cta-band-title">Have a specific project or multi-pillar requirement?</h2>
+          <p class="cta-band-desc">
+            Connect directly with our solutions leads in Pune. We provide detailed scope analysis, fixed-price quotes, and milestone-driven delivery schedules.
+          </p>
+        </div>
+        <div>
+          <a href="contact.html" class="btn btn--secondary btn--lg">
+            Get a Custom Quote
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1 -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo-link" aria-label="Inspireshift Technologies Home">
+            <img src="assets/logo.png" alt="Inspireshift Logo" class="footer-logo-img" width="48" height="48" loading="lazy">
+            <div>
+              <span class="footer-brand-title">Inspireshift</span>
+              <br>
+              <span class="footer-brand-sub">Technologies LLP</span>
+            </div>
+          </a>
+          <p class="footer-tagline">
+            Inspiring Learning. Ensuring Quality. Enabling Technology. Pune, India.
+          </p>
+          <div class="footer-formula">
+            Ideas × Design × Technology = Real Impact
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="footer-col-title">Core Pillars</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#learning-development" class="footer-link">Learning &amp; Development</a></li>
+            <li><a href="services.html#quality-assurance" class="footer-link">Quality Assurance</a></li>
+            <li><a href="services.html#video-learning" class="footer-link">Video Learning</a></li>
+            <li><a href="services.html#graphics-animation" class="footer-link">Graphics &amp; Animation</a></li>
+            <li><a href="services.html#it-services" class="footer-link">IT Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="index.html#about" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="index.html#clients" class="footer-link">Clients</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div>
+          <h4 class="footer-col-title">Direct Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Pune, Maharashtra, India</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <a href="mailto:inspireshifttechnologies@gmail.com">inspireshifttechnologies@gmail.com</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <a href="tel:+919284348694">+91 92843 48694</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 01-1.26-4.36c0-4.54 3.7-8.24 8.24-8.24M8.53 7.33c-.16 0-.35.06-.53.25-.19.19-.71.7-.71 1.7 0 1.01.73 1.98.84 2.12.1.14 1.44 2.2 3.49 3.08.49.21.87.33 1.17.43.49.16.94.13 1.29.08.39-.06 1.2-.49 1.37-.96.17-.48.17-.89.12-.97-.05-.08-.19-.13-.39-.23s-1.2-.59-1.39-.66-.32-.1-.46.1-.53.66-.65.8-.24.15-.44.05c-.2-.1-.84-.31-1.61-.99-.59-.53-.99-1.18-1.11-1.38-.11-.2-.01-.31.09-.41.09-.09.2-.23.3-.35.1-.11.14-.19.2-.32.07-.14.03-.25-.02-.35-.04-.1-.46-1.11-.63-1.52-.17-.4-.34-.35-.46-.35z"/></svg>
+              <a href="https://wa.me/919284348694" target="_blank" rel="noopener">WhatsApp Support</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Signature Footer Wordmark -->
+      <div class="footer-huge-wordmark" aria-hidden="true">INSPIRESHIFT</div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Inspireshift Technologies LLP. All rights reserved.
+        </div>
+        <div>
+          Pune, India • Ideas × Design × Technology = Real Impact
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA with Tooltip -->
+  <div class="whatsapp-float-wrap">
+    <a href="https://wa.me/919284348694" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with Inspireshift on WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 01-1.26-4.36c0-4.54 3.7-8.24 8.24-8.24M8.53 7.33c-.16 0-.35.06-.53.25-.19.19-.71.7-.71 1.7 0 1.01.73 1.98.84 2.12.1.14 1.44 2.2 3.49 3.08.49.21.87.33 1.17.43.49.16.94.13 1.29.08.39-.06 1.2-.49 1.37-.96.17-.48.17-.89.12-.97-.05-.08-.19-.13-.39-.23s-1.2-.59-1.39-.66-.32-.1-.46.1-.53.66-.65.8-.24.15-.44.05c-.2-.1-.84-.31-1.61-.99-.59-.53-.99-1.18-1.11-1.38-.11-.2-.01-.31.09-.41.09-.09.2-.23.3-.35.1-.11.14-.19.2-.32.07-.14.03-.25-.02-.35-.04-.1-.46-1.11-.63-1.52-.17-.4-.34-.35-.46-.35z"/></svg>
+    </a>
+    <span class="whatsapp-tooltip">Chat with us on WhatsApp</span>
+  </div>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

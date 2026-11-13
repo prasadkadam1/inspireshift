@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Portfolio | Inspireshift Technologies</title>
+  <meta name="description"
+    content="Explore Inspireshift's portfolio of storyboards, interactive WBT courses, video-based learning solutions, and website design and development.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" aria-label="Inspireshift Technologies Home">
+        <img src="assets/logo.png" alt="Inspireshift Technologies Logo" class="brand-logo-img" width="83" height="83">
+        <div class="brand-text-block">
+          <span class="brand-title">Inspireshift</span>
+          <span class="brand-tagline">Technologies</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="primary-navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link active" aria-current="page">Portfolio</a>
+        <a href="index.html#why-us" class="nav-link">Why Choose Us</a>
+        <a href="index.html#clients" class="nav-link">Clients</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+919284348694" class="header-contact-link" aria-label="Call Inspireshift at +91 92843 48694">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+          </svg>
+          <span>+91 92843 48694</span>
+        </a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Let's Connect</a>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"
+          aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="portfolio-page-hero">
+      <div class="container portfolio-hero-grid">
+        <div class="portfolio-hero-copy reveal">
+          <span class="badge">Our Portfolio</span>
+          <h1 class="portfolio-hero-title">Explore Our <span class="hero-gradient-text">Portfolio</span></h1>
+          <p class="portfolio-hero-lead">
+            Discover how we transform ideas into engaging digital learning experiences and impactful digital solutions.
+            Explore our work across instructional design, interactive learning, video-based training, and website
+            development.
+          </p>
+          <p class="portfolio-hero-support">
+            At <strong>Inspireshift Technologies</strong>, we combine creativity, instructional expertise, and
+            technology to develop solutions that make learning engaging and digital experiences effective. Our portfolio
+            showcases selected work samples demonstrating our capabilities, creativity, and commitment to quality.
+          </p>
+          <a href="#portfolio-categories" class="btn btn--primary">
+            Explore Our Work
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <figure class="portfolio-hero-media reveal">
+          <img src="assets/portfolio/wbt-courses.jpg" alt="Interactive online course displayed on a laptop"
+            width="1280" height="720">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--light" id="portfolio-categories">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Portfolio Categories</span>
+          <h2 class="section-title">Explore Our Work</h2>
+          <p class="section-desc">
+            Discover selected work across instructional design, interactive learning, video-based training, and website
+            development.
+          </p>
+        </div>
+
+        <div class="cards-grid-4 portfolio-category-grid">
+          <article class="card portfolio-category-card reveal">
+            <img class="portfolio-category-image" src="assets/portfolio/storyboards.jpg"
+              alt="Storyboard panels and visual planning" width="2560" height="1707" loading="lazy">
+            <div class="portfolio-category-body">
+              <h3 class="card-title">Storyboards &amp; Instructional Design</h3>
+              <p class="card-desc">
+                We create structured, learner-focused storyboards that transform complex information into engaging
+                learning experiences. Explore our instructional design strategies, visual concepts, screen layouts, and
+                storyboard samples.
+              </p>
+              <ul class="portfolio-service-list">
+                <li>Instructional design strategy</li>
+                <li>Storyboard development</li>
+                <li>Content structuring</li>
+                <li>Visual scripting</li>
+                <li>Learning experience design</li>
+              </ul>
+              <a href="https://drive.google.com/drive/folders/1dHqDpCBuPMYdH3182YiYikKWYiGFelLs?usp=sharing"
+                class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">
+                Explore Storyboards
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="card portfolio-category-card reveal">
+            <img class="portfolio-category-image" src="assets/portfolio/wbt-courses.jpg"
+              alt="Interactive web-based training course on a laptop" width="1280" height="720" loading="lazy">
+            <div class="portfolio-category-body">
+              <h3 class="card-title">Interactive WBT Courses</h3>
+              <p class="card-desc">
+                Explore our interactive Web-Based Training (WBT) courses designed to deliver engaging, structured, and
+                effective digital learning experiences through interactive content, assessments, and multimedia
+                elements.
+              </p>
+              <ul class="portfolio-service-list">
+                <li>Interactive WBT development</li>
+                <li>E-learning course development</li>
+                <li>Articulate Storyline-based learning</li>
+                <li>Interactive assessments</li>
+                <li>SCORM-based learning solutions</li>
+              </ul>
+              <a href="https://drive.google.com/file/d/1tmr8G0i4i8Fzw0KvObI6LX4GrO5__Z7h/view?usp=drive_link"
+                class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">
+                Explore WBT Samples
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="card portfolio-category-card reveal">
+            <img class="portfolio-category-image" src="assets/portfolio/video-learning.jpg"
+              alt="Video learning and animation illustration" width="2500" height="1470" loading="lazy">
+            <div class="portfolio-category-body">
+              <h3 class="card-title">Video-Based Learning Solutions</h3>
+              <p class="card-desc">
+                Discover our video-based learning solutions that simplify complex concepts through engaging visuals,
+                animations, storytelling, and structured educational content.
+              </p>
+              <ul class="portfolio-service-list">
+                <li>Educational video development</li>
+                <li>Animated learning videos</li>
+                <li>Explainer videos</li>
+                <li>Training videos</li>
+                <li>Video-based course development</li>
+              </ul>
+              <a href="https://drive.google.com/drive/folders/1qu-kg3dbeUcZldC6VATUMhmkLnE51JwC?usp=sharing"
+                class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">
+                Explore Video Samples
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="card portfolio-category-card reveal">
+            <img class="portfolio-category-image" src="assets/portfolio/website-development.jpg"
+              alt="Responsive website displayed across desktop, tablet, and mobile screens" width="2048" height="1066"
+              loading="lazy">
+            <div class="portfolio-category-body">
+              <h3 class="card-title">Website Design &amp; Development</h3>
+              <p class="card-desc">
+                Explore our website design and development work, featuring modern interfaces, responsive layouts,
+                user-friendly navigation, and digital experiences built around business requirements.
+              </p>
+              <ul class="portfolio-service-list">
+                <li>Website UI/UX design</li>
+                <li>Responsive website development</li>
+                <li>Business websites</li>
+                <li>Landing page development</li>
+                <li>Website maintenance and enhancements</li>
+              </ul>
+              <a href="https://docs.google.com/document/d/1HOAEpmStP87rj9oZwCA4SRK84_emMWGKPJbgvs83S40/edit?usp=sharing"
+                class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">
+                Explore Website Samples
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ice">
+      <div class="container">
+        <div class="portfolio-complete-card reveal">
+          <div class="portfolio-complete-icon" aria-hidden="true">
+            <svg viewBox="0 0 96 96">
+              <path d="M27 67h45a14 14 0 0 0 0-28 22 22 0 0 0-42-5 17 17 0 0 0-3 33Z" />
+              <path d="M36 50h26v22H36zM32 50l17-12 17 12" />
+            </svg>
+          </div>
+          <div class="portfolio-complete-copy">
+            <span class="badge">More to Explore</span>
+            <h2 class="section-title">Explore Our Complete Portfolio</h2>
+            <p class="card-desc">
+              Want to see more of what we do? Explore our complete collection of project samples, creative concepts,
+              learning solutions, and website designs in one place.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1HOP_VWEp0rR0ZSjMcZdv84GiPN6amP7w?usp=sharing"
+              class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+              View Complete Portfolio
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+          <div class="portfolio-included">
+            <p>Explore our collection of:</p>
+            <ul class="portfolio-service-list">
+              <li>Storyboards</li>
+              <li>WBT Courses</li>
+              <li>Video-Based Learning</li>
+              <li>Website Designs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="badge">Client Experiences</span>
+          <h2 class="section-title">Selected Projects &amp; Client Experiences</h2>
+          <p class="section-desc">
+            A glimpse of our work across learning, creative, and technology solutions.
+          </p>
+        </div>
+
+        <div class="cards-grid-4 portfolio-project-grid">
+          <article class="card portfolio-project-card reveal">
+            <img src="assets/WDM.png" alt="Waves Digital Media logo"
+              class="portfolio-project-logo portfolio-logo--waves" width="160" height="80" loading="lazy">
+            <h3 class="card-title">Instructional Design Strategy &amp; Storyboarding</h3>
+            <span class="portfolio-project-service">Learning &amp; Development</span>
+          </article>
+          <article class="card portfolio-project-card reveal">
+            <img src="assets/logo_mkcl_new.webp" alt="MKCL logo" class="portfolio-project-logo" width="160" height="80"
+              loading="lazy">
+            <h3 class="card-title">Video-Based Learning</h3>
+            <span class="portfolio-project-service">Video Learning</span>
+          </article>
+          <article class="card portfolio-project-card reveal">
+            <img src="assets/dgstays.svg" alt="DGStays logo" class="portfolio-project-logo" width="160" height="80"
+              loading="lazy">
+            <h3 class="card-title">Website Development</h3>
+            <span class="portfolio-project-service">IT Services</span>
+          </article>
+          <article class="card portfolio-project-card reveal">
+            <img src="assets/amirsteel.png" alt="Ameersteel logo" class="portfolio-project-logo" width="160"
+              height="80" loading="lazy">
+            <h3 class="card-title">Website Development</h3>
+            <span class="portfolio-project-service">IT Services</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-label="Business enquiry">
+      <div class="container cta-band-content">
+        <div class="cta-band-text">
+          <span class="badge badge--white">Business Enquiry</span>
+          <h2 class="cta-band-title">Have a Project in Mind?</h2>
+          <p class="cta-band-desc">
+            Whether you are looking to develop engaging learning experiences, interactive training courses, educational
+            videos, or a professional website, our team is ready to help turn your ideas into impactful solutions.
+          </p>
+        </div>
+        <div class="cta-band-action">
+          <a href="contact.html" class="btn btn--secondary btn--lg">
+            Let's Discuss Your Project
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="contact.html" class="btn btn--outline-white btn--lg">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-closing">
+      <div class="container">
+        <h2>Let's Create Impact Together.</h2>
+        <p><strong>Inspireshift Technologies</strong> &nbsp;|&nbsp; Learning. Creativity. Technology.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo-link" aria-label="Inspireshift Technologies Home">
+            <img src="assets/logo.png" alt="Inspireshift Logo" class="footer-logo-img" width="48" height="48"
+              loading="lazy">
+            <div>
+              <span class="footer-brand-title">Inspireshift</span>
+              <br>
+              <span class="footer-brand-sub">Technologies LLP</span>
+            </div>
+          </a>
+          <p class="footer-tagline">
+            Inspiring Learning. Ensuring Quality. Enabling Technology. Transforming ideas into digital impact.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Core Pillars</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#learning-development" class="footer-link">Learning &amp; Development</a></li>
+            <li><a href="services.html#quality-assurance" class="footer-link">Quality Assurance</a></li>
+            <li><a href="services.html#video-learning" class="footer-link">Video Learning</a></li>
+            <li><a href="services.html#it-services" class="footer-link">IT Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+            <li><a href="index.html#clients" class="footer-link">Clients</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item"><span>Pune, Maharashtra, India</span></li>
+            <li class="footer-contact-item"><a href="mailto:inspireshifttechnologies@gmail.com">inspireshifttechnologies@gmail.com</a></li>
+            <li class="footer-contact-item"><a href="tel:+919284348694">+91 92843 48694</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; <span id="current-year">2026</span> Inspireshift Technologies LLP. All rights reserved.</div>
+        <div>Pune, India &bull; Ideas &times; Design &times; Technology = Real Impact</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js" defer></script>
+</body>
+
+</html>
