@@ -142,17 +142,36 @@ function initServicesNav() {
 
   if (!navBtns.length || !sections.length) return;
 
+  const navList = navBtns[0].parentElement;
+  if (!navList) return;
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const id = entry.target.getAttribute('id');
+        let activeBtn = null;
+
         navBtns.forEach(btn => {
-          if (btn.getAttribute('href') === `#${id}`) {
-            btn.classList.add('active');
-          } else {
-            btn.classList.remove('active');
-          }
+          const isActive = btn.getAttribute('href') === `#${id}`;
+          btn.classList.toggle('active', isActive);
+          if (isActive) activeBtn = btn;
         });
+
+        if (activeBtn) {
+          const listRect = navList.getBoundingClientRect();
+          const buttonRect = activeBtn.getBoundingClientRect();
+          let scrollDelta = 0;
+
+          if (buttonRect.left < listRect.left) {
+            scrollDelta = buttonRect.left - listRect.left - 8;
+          } else if (buttonRect.right > listRect.right) {
+            scrollDelta = buttonRect.right - listRect.right + 8;
+          }
+
+          if (scrollDelta) {
+            navList.scrollBy({ left: scrollDelta, behavior: 'smooth' });
+          }
+        }
       }
     });
   }, {

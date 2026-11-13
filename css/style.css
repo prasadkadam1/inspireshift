@@ -2215,28 +2215,26 @@ textarea.form-control {
     --header-height: 68px;
   }
 
+  .services-nav-bar {
+    padding: 8px 0;
+  }
+
   .services-nav-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
     gap: 8px;
-    overflow: visible;
-    padding-bottom: 0;
-    white-space: normal;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+
+  .services-nav-list::-webkit-scrollbar {
+    display: none;
   }
 
   .services-nav-btn {
-    justify-content: center;
-    min-width: 0;
     min-height: 44px;
-    padding: 8px 10px;
-    text-align: center;
-    white-space: normal;
-  }
-
-  .services-nav-btn:last-child {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: calc(50% - 4px);
+    padding: 8px 12px;
+    white-space: nowrap;
   }
 
   .brand-link {
